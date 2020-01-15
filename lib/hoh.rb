@@ -45,6 +45,10 @@ def naming_system
 end
 
 def addSubcategory(parent, sub)
-  parent[:sub_category] = {:label => sub, :sub_category => nil}
+  parent[:sub_category] = createNode(sub)
   return parent[:sub_category]
+end
+
+def createNode(label) 
+  return {:label => label, :sub_category => nil}
 end
