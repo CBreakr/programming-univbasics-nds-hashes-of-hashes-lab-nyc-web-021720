@@ -41,5 +41,10 @@ def naming_system
   #  Species
   # So, if we have the "Kingdom" node we should be able to "tunnel" into the
   # HoH all the way to Species!
+  
+end
 
+def addSubcategory(parent, sub)
+  parent[:sub_category] = {:label => sub, :sub_category => nil}
+  return parent[:sub_category]
 end
