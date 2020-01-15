@@ -42,6 +42,15 @@ def naming_system
   # So, if we have the "Kingdom" node we should be able to "tunnel" into the
   # HoH all the way to Species!
   
+  system = createNode("Kingdom")
+            .addSubcategory("Phylum")
+            .addSubcategory("Class")
+            .addSubcategory("Order")
+            .addSubcategory("Family")
+            .addSubcategory("Genus")
+            .addSubcategory("Species")
+            
+  return system
 end
 
 def addSubcategory(parent, sub)
